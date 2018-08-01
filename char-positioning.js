@@ -6,9 +6,9 @@ function positionLetters(string) {
   for (var i = 0; i < noSpaces.length; i++) {
     if (noSpaces[i].match(letters)) {
       if (output[`${noSpaces[i]}`] == undefined) {
-        output[`${noSpaces[i]}`] = [String(i)];
+        output[`${noSpaces[i]}`] = [(i)];
       } else {
-        output[`${noSpaces[i]}`].push(String(i));
+        output[`${noSpaces[i]}`].push(i);
       }
     }
   }
